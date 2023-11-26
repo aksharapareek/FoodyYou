@@ -1,0 +1,390 @@
+:root {
+    --main-color: #4c245d;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: 1rem solid var(var(--black));
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 90px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 8px;
+    /* Adjust padding for a smaller size */
+    font-size: 14px;
+    /* Adjust font size for a smaller size */
+    border: none;
+    /* Remove border */
+    border-radius: 15px;
+    /* Set border-radius to make it cylindrical */
+    float: left;
+    width: 70%;
+    /* Adjust width as needed */
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    /* Adjust width as needed */
+    padding: 8px;
+    /* Adjust padding for a smaller size */
+    background: #01192d;
+    color: white;
+    font-size: 14px;
+    /* Adjust font size for a smaller size */
+    border: none;
+    /* Remove border */
+    border-radius: 15px;
+    /* Set border-radius to make it cylindrical */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #1e3343;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add the following styles to your existing CSS */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #514b4b;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add the following styles to your existing CSS */
+.arrow {
+    margin-left: 5px;
+    /* Adjust the margin as needed */
+}
+
+/* Add the following styles to rotate the arrow when the dropdown is open */
+.nav-item.dropdown:hover .arrow {
+    transform: rotate(180deg);
+    /* Rotate 180 degrees for a downward arrow */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+
+
+
+
+
+
+
+/* style.css */
+/* ... (your existing styles) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding is included in the element's total width and height */
+}
+
+#recipe {
+    text-align: center;
+    padding: 30px;
+    margin: 30px 0;
+    color: #01192d;
+    margin-bottom: 150px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#line {
+    text-align: center;
+    padding: 30px;
+    margin: 30px 0 0;
+    color: #01192d;
+    margin-bottom: 0;
+
+}
+
+.feature-section {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+input[type="text"] {
+    flex: 1;
+    /* This makes the input take the remaining space */
+    margin-right: 10px;
+    /* Add margin to the right of the input */
+    width: calc(100% - 20px);
+    /* Adjust width to account for the margin */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #01192d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1e3343;
+}
+
+#ingredientResult {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+
+}
+
+/* style.css */
+/* ... (your existing styles) */
+
+#share-buttons {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#facebook-share {
+    background-color: #1877f2;
+    /* Facebook blue color */
+    color: #fff;
+}
+
+#email-share {
+    background-color: #000;
+    /* Black color */
+    color: #fff;
+}
+
+#reddit-share {
+    background-color: #ff4500;
+    /* Reddit orange color */
+    color: #fff;
+}
+
+
+#share-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#share-buttons button:hover {
+    background-color: #1e3343;
+}
+
+
+/* style.css */
+#linee {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    /* Align in the center */
+    color: #01192d;
+    max-width: 800px;
+    /* Set a maximum width if needed */
+    margin-bottom: 130px;
+}
+
+#linee h9 {
+    font-size: 14px;
+    /* Adjust font size as needed */
+}
+
+/* style.css */
+#popular-reads {
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+#popular-reads h2 {
+    margin-bottom: 40px;
+    /* Add margin at the bottom of the heading */
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 10px 30px;
+    max-width: 400px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 70px;
+    /* Align text within the card to the left */
+}
+
+.recipe-card h3 {
+    color: #4c245d;
+}
+
+.recipe-card p {
+    color: #777;
+}
+
+/* Your existing styles go here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background: url(../image/footerbg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-top-left-radius: 50% 20px;
+    /* Adjust the values for the desired curve */
+    border-top-right-radius: 50% 20px;
+}
+
+/* Styles for the provided footer */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.box a i {
+    margin-right: 5px;
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.box a:hover i {
+    padding-right: 2rem;
+}
+
+.credit {
+    margin-top: 20px;
+    font-size: 2rem;
+    border-top: .1rem solid var(--light-white);
+    color: var(--white);
+    text-align: center;
+}
+
+.credit span {
+    font-weight: bold;
+    color: #fff;
+}
